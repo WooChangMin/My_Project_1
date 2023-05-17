@@ -15,18 +15,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Ratate",
+                    "name": "jump",
                     "type": "Button",
-                    "id": "965ae7af-54d4-4d38-be01-393e03c6b744",
+                    "id": "150dca7a-8686-4a95-b715-0e69461bfd63",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "jump",
-                    "type": "Button",
-                    "id": "150dca7a-8686-4a95-b715-0e69461bfd63",
+                    "name": "Fire",
+                    "type": "PassThrough",
+                    "id": "c3680623-3a2e-48c7-86ad-113d7cf61615",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -145,39 +145,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "TankHead",
-                    "id": "521cd0ee-9d47-4a18-81a7-71c0679b4038",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Ratate",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "dbdcb0c2-a37f-45e9-8ee4-5e7b38ae9d70",
-                    "path": "<Keyboard>/g",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Ratate",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "706cde7e-b192-45c4-8ada-d15eb96ce213",
-                    "path": "<Keyboard>/h",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Ratate",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "",
                     "id": "a8676532-af48-441a-992f-ceeeed38b12c",
                     "path": "<Keyboard>/space",
@@ -185,6 +152,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1eb9f3eb-cf1f-435d-ad26-a7af33dce841",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

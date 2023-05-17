@@ -360,10 +360,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ba9364655bae18418162564abb15756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 3
   rotateSpeed: 150
   jumpPower: 5
-  repeatSpeed: 0
+  repeatSpeed: 0.3
   ShootingPoint: {fileID: 0}
   BulletPrefabs: {fileID: 4288762687656972581, guid: a5fcc0fce8d484140aab49a9b3ad5612, type: 3}
 --- !u!1 &5894050479518285242
