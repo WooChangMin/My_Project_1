@@ -14,11 +14,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject BulletPrefabs;
 
 
+    private Animator animator;
     private Rigidbody rb;
     private Vector3 moveDir;
     private Vector2 rotateDir;
     private void Awake()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
     }
     
@@ -47,10 +49,15 @@ public class PlayerController : MonoBehaviour
     {
         rb.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
     }
-
-    private void Fire(InputValue value)
+        
+    public void Fire()
     {
-        Instantiate(BulletPrefabs, transform.position, transform.rotation);
+        Instantiate(BulletPrefabs, ShootingPoint.position, ShootingPoint.rotation);
+        animator.SetTrigger("Fire");
+    }
+    public void OnFire(InputValue value)
+    {
+        Fire();
     }
     private void OnJump(InputValue value)
     {

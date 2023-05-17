@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
+    [SerializeField] private GameObject ExplosiveEffect;
 
     private Rigidbody rb;
 
@@ -16,7 +17,12 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         rb.velocity = transform.forward * moveSpeed;
-        Destroy(rb, 3f);
+        Destroy(gameObject, 3f);
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Instantiate(ExplosiveEffect, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 
 }
