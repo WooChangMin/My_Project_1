@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 4455936779402483856}
   - component: {fileID: -6967313395347234720}
   - component: {fileID: 5965958761499582534}
+  - component: {fileID: -4011921656391192964}
   m_Layer: 8
   m_Name: Tank
   m_TagString: Untagged
@@ -360,12 +361,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ba9364655bae18418162564abb15756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  rotateSpeed: 150
-  jumpPower: 5
   repeatSpeed: 0.3
   ShootingPoint: {fileID: 0}
   BulletPrefabs: {fileID: 4288762687656972581, guid: a5fcc0fce8d484140aab49a9b3ad5612, type: 3}
+--- !u!114 &-4011921656391192964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894050479518285238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4f5cf23a4b8a94eb11fc950fc40471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rotateSpeed: 150
+  jumpPower: 5
 --- !u!1 &5894050479518285242
 GameObject:
   m_ObjectHideFlags: 0
